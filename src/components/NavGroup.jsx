@@ -41,12 +41,12 @@ const NavGroup = () => {
             <NavLink to={"/search?q=keyboard"}>Keyboard</NavLink>
           </Button>
         </Col>
-        <Col xs={0} sm={3} md={2}>
+        <Col xs={0} sm={3} md={0} lg={3}>
           <Button>
             <NavLink to={"/search?q=wallpaper"}>Wallpaper</NavLink>
           </Button>
         </Col>
-        <Col xs={0} sm={0} md={2}>
+        <Col xs={0} sm={0} md={0} lg={3}>
           <Button>
             <NavLink to={"/search?q=background"}>Background</NavLink>
           </Button>

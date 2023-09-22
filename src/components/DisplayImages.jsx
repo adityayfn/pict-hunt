@@ -1,18 +1,9 @@
-import { useState, useRef } from "react"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
-import ModalImage from "./ModalImage"
+import { LazyLoadComponent } from "react-lazy-load-image-component"
+import Imagespreview from "./Imagespreview"
 
 const DisplayImages = (props) => {
   const { images } = props
-
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
-  const detailImageRef = useRef(null)
-
-  const showModal = (image) => {
-    setIsModalOpen(true)
-    detailImageRef.current = image
-  }
 
   return (
     <>
@@ -22,22 +13,12 @@ const DisplayImages = (props) => {
       >
         <Masonry gutter="10px">
           {images?.map((image, index) => (
-            <img
-              key={index}
-              src={image.webformatURL}
-              alt={image.pageURL}
-              onClick={() => showModal(image)}
-              loading="lazy"
-            />
+            <LazyLoadComponent key={index}>
+              <Imagespreview image={image} />
+            </LazyLoadComponent>
           ))}
         </Masonry>
       </ResponsiveMasonry>
-
-      <ModalImage
-        detailImageRef={detailImageRef}
-        isModalOpen={isModalOpen}
-        setIsModalOpen={setIsModalOpen}
-      />
     </>
   )
 }
