@@ -13,7 +13,7 @@ const Homepage = () => {
   const [page, setPage] = useState(1)
 
   const getAllImages = async () => {
-    const accessKey = "39557967-641c71b10620958e9f7a3eab9"
+    const accessKey = import.meta.env.VITE_ACCESS_KEY
     const url = `https://pixabay.com/api/?key=${accessKey}&q=mountain&page=${page}&per_page=20`
     const res = await axios.get(url)
     return res.data

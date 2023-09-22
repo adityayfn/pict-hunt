@@ -22,7 +22,7 @@ const Resultspage = () => {
   const newUrl = newQuery(params, "?q=")
 
   const getResults = async () => {
-    const accessKey = "39557967-641c71b10620958e9f7a3eab9"
+    const accessKey = import.meta.env.VITE_ACCESS_KEY
     const url = `https://pixabay.com/api/?key=${accessKey}&q=${newQuery(
       params,
       "?q="
