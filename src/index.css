@@ -1,0 +1,25 @@
+/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,400;0,700;1,600&family=Lobster&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  margin: 0;
+}
+.nav-title {
+  font-family: "Lobster", cursive;
+  cursor: pointer;
+}
+.hero-image {
+  background-image: url("../public/hero.jpg");
+  background-position: bottom;
+  background-size: cover;
+  height: 350px;
+  width: 100vw;
+  margin-bottom: 50px;
+}
+.hero-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10px;
+}
