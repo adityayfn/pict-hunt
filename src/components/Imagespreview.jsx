@@ -35,6 +35,7 @@ const Imagespreview = (props) => {
     <>
       <Image
         src={image.webformatURL}
+        alt={image.pageURL}
         preview={{
           src: image.largeImageURL,
           toolbarRender: (
