@@ -1,9 +1,33 @@
-# React + Vite
+# Pict Hunt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pict Hunt is an image explorer website, there are a lot of images for free on it. In this project, I used React JS and the API from Pixabay.
 
-Currently, two official plugins are available:
+# Instalation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# pict-hunt
+```bash
+# clone
+git clone https://github.com/adityayfn/pict-hunt
+```
+
+Make sure to install the dependencies:
+
+```bash
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+```
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file. Visit Pixabay for developer to get Access Key.
+
+`VITE_ACCESS_KEY`
+
+## Tech Stack
+
+**Client:** React, Ant Design
